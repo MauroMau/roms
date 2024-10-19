@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rom Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>MauroMau Rom Library</h1>
+    </header>
+
+    <div id="password-modal" class="modal">
+        <div class="modal-content">
+            <h2>Passwort eingeben</h2>
+            <input type="password" id="password-input" placeholder="Passwort">
+            <button id="password-submit">Absenden</button>
+            <p id="error-message" style="color: red; display: none;">Falsches Passwort!</p>
+        </div>
+    </div>
+    
+    <!-- Suchleiste -->
+    <div class="search-bar">
+        <span class="search-icon">&#x1F50E;&#xFE0E;</span>
+        <input type="text" id="searchInput" placeholder="Suche nach Spiel...">
+    </div>
+
+    <!-- Sortierleiste -->
+    <div class="sort-bar">
+        <button id="sortAscButton" class="sort-button selected">Name aufsteigend</button>
+        <button id="sortDescButton" class="sort-button">Name absteigend</button>
+    </div>
+
+    <div class="container">
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2023/12/mario-kart-8-deluxe-XCI-NSP-ROM.jpg" alt="Super Mario Odyssey">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/super-mario-odyssey-nsp-rom-download-and-update/download/file-2" download>NSP ROM | 5.23GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan143kazi/switch/releases/download/rom/Super.Mario.Odyssey.0100000000010800.v262144.nsp" download>New Update of NSP ROM [v1.3.0] | 570MB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2024/01/Super-Mario-Odyssey-NSP-and-XCI-ROM.jpg" alt="Mario Kart 8 Deluxe">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/mario-kart-8-deluxe-nsp-xci-rom-download/download/file-2" download>NSP ROM | 6.8GB </a>
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/mario-kart-8-deluxe-nsp-xci-rom-download/download/file-4" download>New Update NSP ROM [v3.0.3] | 4.5GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan143kazi/switch/releases/download/rom/Mario.Kart.8.Deluxe.DLC.Booster.Course.Pass.0100152000023001.v65536.nsp" download>DLC with 1 to 6 Wave | 120KB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2023/12/The-Legend-of-Zelda-Breath-of-the-Wild-NSP-XCI-ROM.jpg" alt="The Legend of Zelda: Breath of the Wild">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/the-legend-of-zelda-breath-of-the-wild-nsp-rom-and-update-download/download/file-1" download>NSP ROM | 13.48GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan144kazi/getrom/releases/download/get/The.Legend.of.Zelda.Breath.of.the.Wild.01007EF00011E800.v786432.nsp" download>New Update of NSP ROM [v1.6.0] | 948MB</a>
+            <a class="downloadButton" href="https://github.com/Hasan144kazi/getrom/releases/download/get/The.Legend.of.Zelda.Breath.of.the.Wild.DLC.Pack.2.DLCs.zip" download>DLC Pack [The Master Trials and The Champions Ballad] | 1.30GB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2023/12/The-Legend-of-Zelda-Tears-of-the-Kingdom-NSP-XCI-ROM.jpg" alt="The Legend of Zelda: Tears of the Kingdom">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/the-legend-of-zelda-tears-of-the-kingdom-nsp-rom/download/file-1" download>NSP ROM | 16GB | eShop</a>
+            <a class="downloadButton" href="https://github.com/Hasan143kazi/switch/releases/download/rom/The.Legend.of.Zelda.Tears.of.the.Kingdom.0100F2C0115B6800.v393216.nsp" download>New Update NSP ROM [v1.2.1] | 339MB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2024/01/Super-Smash-Bros-Ultimate.jpg" alt="Super Smash Bros Ultimate">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/super-smash-bros-ultimate-nsp-links/download/file-1" download>NSP ROM | 13.6GB</a>
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/super-smash-bros-ultimate-nsp-links/download/file-3" download>New Update of NSP ROM [v13.0.3] | 3.7GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan143kazi/switch/releases/download/rom/Super.Smash.Bros.Ultimate.DLC.Pack.99.DLCs.zip" download>All DLCs [99] | 11.23 MB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2023/12/Super-Mario-Bros.-Wonder-NSP-and-XCI-ROM.jpg" alt="Super Mario Bros. Wonder">
+            <a class="downloadButton" href="https://pub-897de1ddf9cc4c43a289f1d7006fcbf6.r2.dev/Super%20Mario%20Bros.%20Wonder%5B010015100B514000%5D%5B1.0.0%5D%5B0%5D%5B16.0.3%5D.nsp" download>NSP ROM [eShop] | 3.51GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan143kazi/switch/releases/download/rom/Super.Mario.Bros.Wonder.010015100B514800.v65536.US.nsp" download>New Update of NSP ROM [v1.0.1] | 51.63MB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2024/07/New-Super-Mario-Bros.-U-Deluxe-NSP-XCI-ROM.webp" alt="New Super Mario Bros. U Deluxe">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/new-super-mario-bros-u-deluxe-nsp-rom/download/file-1/" download>NSP ROM | 2.5GB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2024/07/Mario-Party-Superstars-NSP-XCI-ROM-1.webp" alt="Mario Party Superstars">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/mario-party-superstars-nsp-rom/download/file-1" download>NSP ROM | 2.7GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan144kazi/getrom/releases/download/get/Mario.Party.Superstars.01006FE013472800.v131072.nsp" download>New Update NSP ROM [v1.1.1] | 125.1MB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2024/06/Luigis-Mansion-2-HD-NSP-XCI-ROM.png" alt="Luigi’s Mansion 2 HD">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/luigis-mansion-2-hd-nsp-xci-rom/download/file-1" download>NSP ROM | 3.00GB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2024/06/Luigis-Mansion-3-NSP-XCI-ROM-1.webp" alt="Luigi’s Mansion 3">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/luigis-mansion-3-nsp-rom/download/file-1" download>NSP ROM | 6.4GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan143kazi/switch/releases/download/rom/Luigi.s.Mansion.3.0100DCA0064A6800.US.v327680.CR-13.nsp" download>New Update NSP ROM [v1.4.0] | 1.01GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan143kazi/switch/releases/download/rom/Luigis.Mansion.3.DLC.Pack.2.DLCs.zip" download>All DLC Pack[2] | 355.01MB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2024/07/Mario-Sonic-at-the-Olympic-Games-Tokyo-2020-NSP-XCI-ROM.webp" alt="Mario & Sonic at the Olympic Games Tokyo 2020">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/mario-sonic-at-the-olympic-games-tokyo-2020-nsp-rom/download/file-1" download>NSP ROM | 6.4GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan144kazi/getrom/releases/download/get/Mario.Sonic.at.the.Olympic.Games.Tokyo.2020.010003000E146800.US.v65536.nsp" download>New Update NSP ROM [v1.0.1] | 27.4MB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2024/07/Mario-Golf-Super-Rush-NSP-XCI-ROM.webp" alt="Mario Golf: Super Rush">
+            <a class="downloadButton" href="New Update NSP ROM [v4.0.0] | 1.3GB" download>NSP ROM | 2.9GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan144kazi/getrom/releases/download/get/Mario.Golf.Super.Rush.0100C9C00E25C800.v262144.nsp" download>New Update NSP ROM [v4.0.0] | 1.3GB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2024/01/EA-SPORTS-FC-24-NSP-XCI-ROM.png" alt="EA SPORTS FC 24">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/ea-sports-fc-24-nsp-xci-rom/download/file-2" download>NSP ROM | 8.13GB</a>
+        </div>
+        <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2023/12/Pokemon-Scarlet-NSP-XCI-ROM.jpg" alt="Pokemon Scarlet">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/pokemon-scarlet-nsp-xci-rom-v3-0-0-download/download/file-2" download>NSP ROM | 6.27GB</a>
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/pokemon-scarlet-nsp-xci-rom-v3-0-0-download/download/file-4" download>New Update NSP ROM [v3.0.1] | 4.88GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan143kazi/switch/releases/download/rom/Pokemon.Scarlet.DLC.The.Indigo.Disk.The.Teal.Mask.+.New.Uniform.Set.0100A3D008C5D001.v0.nsp" download>The Hidden Treasure of Area Zero DLC | Part 1: The Teal Mask and Part 2: The Indigo Disk | 118.20KB</a>
+        </div>
+            <div class="tile">
+            <img src="https://switchrom.net/wp-content/uploads/2023/12/Pokemon-Violet.jpg" alt="Pokemon Violet">
+            <a class="downloadButton" href="https://file.switchrom.net/download/switch/pokemon-violet-nsp-links/download/file-2" download>ROM | 6.27GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan143kazi/switch/releases/download/rom/Pokemon.Violet.DLC.The.Indigo.Disk.The.Teal.Mask.+.New.Uniform.Set.01008F6008C5F001.v0.nsp" download>New Update NSP ROM [v3.0.1] | 4.88GB</a>
+            <a class="downloadButton" href="https://github.com/Hasan143kazi/switch/releases/download/rom/Pokemon.Violet.DLC.The.Indigo.Disk.The.Teal.Mask.+.New.Uniform.Set.01008F6008C5F001.v0.nsp" download>The Hidden Treasure of Area Zero DLC | Part 1: The Teal Mask and Part 2: The Indigo Disk | 118.20KB</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 MauroMau. Keine Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const passwordModal = document.getElementById('password-modal');
+        const passwordInput = document.getElementById('password-input');
+        const passwordSubmit = document.getElementById('password-submit');
+        const errorMessage = document.getElementById('error-message');
+        
+        const correctPasswordHash = "4e331e3261d0d65716a0a55a63a126a74848af43277e9ea47196d4a53553923c"; // Setze hier den gehashten Wert
+
+        async function hashPassword(password) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(password);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => ('00' + b.toString(16)).slice(-2)).join('');
+            return hashHex;
+        }
+
+        passwordSubmit.addEventListener('click', async function() {
+            const inputPassword = passwordInput.value;
+            const inputPasswordHash = await hashPassword(inputPassword);
+            
+            if (inputPasswordHash === correctPasswordHash) {
+                passwordModal.style.display = 'none'; // Verstecke das Modal
+            } else {
+                errorMessage.style.display = 'block'; // Zeige die Fehlermeldung
+            }
+        });
+    });
+
+        // Suchfunktion
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchQuery = this.value.toLowerCase();
+            const tiles = document.querySelectorAll('.tile');
+            
+            tiles.forEach(tile => {
+                const altText = tile.querySelector('img').alt.toLowerCase();
+                if (altText.includes(searchQuery)) {
+                    tile.style.display = 'block';
+                } else {
+                    tile.style.display = 'none';
+                }
+            });
+        });
+
+        // Sortierfunktion
+        function sortTiles(order) {
+            const container = document.querySelector('.container');
+            const tiles = Array.from(container.children);
+            
+            tiles.sort((a, b) => {
+                const nameA = a.querySelector('img').alt.toLowerCase();
+                const nameB = b.querySelector('img').alt.toLowerCase();
+                
+                if (order === 'asc') {
+                    return nameA.localeCompare(nameB);
+                } else if (order === 'desc') {
+                    return nameB.localeCompare(nameA);
+                }
+            });
+            
+            tiles.forEach(tile => container.appendChild(tile));
+        }
+
+        // Sortier-Buttons
+        document.getElementById('sortAscButton').addEventListener('click', function() {
+            sortTiles('asc');
+            this.classList.add('selected');
+            document.getElementById('sortDescButton').classList.remove('selected');
+        });
+
+        document.getElementById('sortDescButton').addEventListener('click', function() {
+            sortTiles('desc');
+            this.classList.add('selected');
+            document.getElementById('sortAscButton').classList.remove('selected');
+        });
+
+        // Initiale Sortierung
+        sortTiles('asc');
+    </script>
+</body>
+</html>
