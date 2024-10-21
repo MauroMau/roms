@@ -141,6 +141,23 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.downloadButton1Ficher {
+    display: block;
+    background-color: #ff8c00; /* Ein lebhaftes Orange */
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.downloadButton1Ficher:hover {
+    background-color: #e07b00; /* Ein dunkleres Orange für den Hover-Effekt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
 /* Footer */
 footer {
     margin-top: 40px;
